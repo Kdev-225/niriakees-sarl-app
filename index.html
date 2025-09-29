@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <base target="_self">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niriakees.SARL - Agence multi-service à Yaou</title>
+    <meta name="description" content="Votre agence multi-service de confiance à Bonoua. Achat, vente et location de biens immobiliers.">
+
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Ton CSS personnalisé -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+
+<body class="bg-light text-dark min-h-screen flex flex-col">
+    <!-- Header Sticky -->
+  <header class="fixed w-full bg-white shadow-md z-50">
+    <nav class="container mx-auto px-4 py-2 flex justify-between items-center">
+        <div class="flex items-center space-x-3">
+            <!-- Logo image plus grand -->
+            <img src="Image/NIRIAKEES.png" alt="Logo Niriakees" class="h-16 w-auto"> 
+            <span class="font-bold text-lg">Niriakees.SARL</span>
+        </div>
+        <div class="hidden md:flex space-x-4">
+            <a href="#accueil" class="text-sm hover:text-primary transition">Accueil</a>
+            <a href="#services" class="text-sm hover:text-primary transition">Nos services</a>
+            <a href="#apropos" class="text-sm hover:text-primary transition">À propos</a>
+            <a href="#galerie" class="text-sm hover:text-primary transition">Galerie</a>
+            <a href="#contact" class="text-sm hover:text-primary transition">Contact</a>
+        </div>
+        <button class="md:hidden text-dark">
+            <i class="fas fa-bars text-xl"></i>
+        </button>
+    </nav>
+</header>
+
+    <!-- Hero Section-->
+<section id="accueil" 
+    class="relative min-h-screen flex items-center justify-center text-center text-white overflow-hidden">
+
+    <!-- Background image -->
+    <div class="absolute inset-0 bg-cover bg-center"
+         style="background-image: url('Image/NIRIAKEES.png');">
+    </div>
+
+    <!-- Overlay dégradé -->
+    <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70"></div>
+
+    <!-- Contenu -->
+    <div class="relative z-10 max-w-3xl px-6">
+        <h1 class="text-4xl md:text-6xl font-extrabold mb-4 animate-slide-up tracking-wide">
+            Bienvenue chez <span class="text-primary">Niriakees.SARL</span>
+        </h1>
+        <p class="text-lg md:text-2xl mb-8 animate-fade-in text-gray-200">
+            Votre agence multi-services à <span class="font-semibold">Yaou</span>
+        </p>
+        <a href="#contact" 
+           class="bg-primary hover:bg-secondary text-white font-medium py-3 px-8 rounded-full shadow-lg transition-all duration-300 hover:scale-105 inline-block animate-bounce">
+            🚀 Contactez-nous
+        </a>
+    </div>
+
+    <!-- Effet décoratif (flou lumineux) -->
+    <div class="absolute top-0 left-0 w-72 h-72 bg-primary/30 rounded-full blur-3xl opacity-50 animate-pulse"></div>
+    <div class="absolute bottom-0 right-0 w-96 h-96 bg-secondary/20 rounded-full blur-3xl opacity-40 animate-pulse"></div>
+</section>
+
+
+    </section>
+<!-- Section principale -->
+<section id="services" class="py-20 bg-white">
+  <div class="container mx-auto px-4">
+
+
+  <!-- Titre principal -->
+  <h2 class="text-4xl font-bold text-center mb-16">Nos services</h2>
+
+  <!-- Sous-section Immobilier -->
+  <div class="mb-16 bg-gray-100 p-8 rounded-lg">
+   <h3 class="text-2xl font-medium mb-8 text-center">Immobilier et Foncier</h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+      <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300">
+        <div class="text-primary text-3xl mb-4">
+          <i class="fas fa-home"></i>
+        </div>
+        <h4 class="text-lg font-semibold mb-2">Achat</h4>
+        <p class="text-gray-600">Trouvez la propriété de vos rêves avec notre sélection exclusive.</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300">
+        <div class="text-primary text-3xl mb-4">
+          <i class="fas fa-key"></i>
+        </div>
+        <h4 class="text-lg font-semibold mb-2">Location</h4>
+        <p class="text-gray-600">Découvrez nos offres de location adaptées à vos besoins.</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300">
+        <div class="text-primary text-3xl mb-4">
+          <i class="fas fa-tag"></i>
+        </div>
+        <h4 class="text-lg font-semibold mb-2">Vente</h4>
+        <p class="text-gray-600">Nous vous accompagnons pour vendre votre bien au meilleur prix.</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300">
+        <div class="text-primary text-3xl mb-4">
+          <i class="fas fa-search-dollar"></i>
+        </div>
+        <h4 class="text-lg font-semibold mb-2">Estimation</h4>
+        <p class="text-gray-600">Profitez d’une estimation gratuite et précise de votre bien.</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300">
+  <div class="text-primary text-3xl mb-4">
+    <i class="fas fa-building"></i> <!-- icône pour construction/lotissement -->
+  </div>
+  <h4 class="text-lg font-semibold mb-2">Construction & Lotissement</h4>
+  <p class="text-gray-600">Nous réalisons vos projets de construction et proposons des terrains lotis prêts à bâtir.</p>
+</div>
+
+
+    </div>
+  </div>
+
+  <!-- Sous-section Événementiel -->
+<div class="mb-16 bg-gray-100 p-8 rounded-lg">
+  <h3 class="text-2xl font-medium mb-8 text-center">Événementiel</h3>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+    <!-- Mariage Inoubliable -->
+    <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300 cursor-pointer" onclick="openModalMariage()">
+      <div class="text-primary text-3xl mb-4">
+        <i class="fas fa-heart"></i>
+      </div>
+      <h4 class="text-lg font-semibold mb-2">Mariage Inoubliable</h4>
+      <p class="text-gray-600">Vivez un mariage unique et mémorable avec notre organisation sur mesure.</p>
+      <span class="text-blue-500 font-medium mt-2 inline-block">Lire la suite</span>
+    </div>
+
+    <!-- Producteur et Promoteur -->
+    <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300">
+      <div class="text-primary text-3xl mb-4">
+        <i class="fas fa-microphone"></i>
+      </div>
+      <h4 class="text-lg font-semibold mb-2">Producteur et Promoteur</h4>
+      <p class="text-gray-600">Nous produisons et promouvons vos événements pour un impact maximum.</p>
+    </div>
+
+    <!-- Location de matériel -->
+    <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300">
+      <div class="text-primary text-3xl mb-4">
+        <i class="fas fa-chair"></i>
+      </div>
+      <h4 class="text-lg font-semibold mb-2">Location de matériel</h4>
+      <p class="text-gray-600">Chaises, tables, sono, lumières et plus encore.</p>
+    </div>
+
+    <!-- Animation -->
+    <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300">
+      <div class="text-primary text-3xl mb-4">
+        <i class="fas fa-music"></i>
+      </div>
+      <h4 class="text-lg font-semibold mb-2">Animation</h4>
+      <p class="text-gray-600">DJ, artistes et animateurs pour mettre l’ambiance.</p>
+    </div>
+
+  </div>
+</div>
+
+<!-- Modal pour Mariage Inoubliable -->
+<div id="modalMariage" class="fixed inset-0 bg-black bg-opacity-50 hidden justify-center items-center z-50">
+  <div class="bg-white rounded-lg w-11/12 md:w-2/3 lg:w-1/2 p-6 relative">
+    <button class="absolute top-2 right-2 text-gray-600 hover:text-gray-900 text-2xl font-bold" onclick="closeModalMariage()">&times;</button>
+    <h3 class="text-2xl font-bold mb-4">Mariage Inoubliable</h3>
+    <p class="text-gray-700">
+      Ici, tu peux détailler tout le concept de Mariage Inoubliable, ajouter des images, des packages, des témoignages, etc. Le but est de reproduire le même effet que dans ta section Actualité.
+    </p>
+  </div>
+</div>
+
+<script>
+  function openModalMariage() {
+    document.getElementById('modalMariage').classList.remove('hidden');
+    document.getElementById('modalMariage').classList.add('flex');
+  }
+
+  function closeModalMariage() {
+    document.getElementById('modalMariage').classList.add('hidden');
+    document.getElementById('modalMariage').classList.remove('flex');
+  }
+</script>
+
+
+
+  <!-- Sous-section Tourisme -->
+<div class="mb-16 bg-gray-100 p-8 rounded-lg">
+  <h3 class="text-2xl font-medium mb-8 text-center">Tourisme</h3>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+    <!-- Voyage touristique -->
+    <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300 cursor-pointer">
+      <div class="text-primary text-3xl mb-4">
+        <i class="fas fa-plane"></i>
+      </div>
+      <h4 class="text-lg font-semibold mb-2">Voyage touristique</h4>
+      <p class="text-gray-600">Explorez les destinations touristiques les plus prisées avec nos circuits organisés.</p>
+    </div>
+
+    <!-- Camping -->
+    <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300 cursor-pointer">
+      <div class="text-primary text-3xl mb-4">
+        <i class="fas fa-campground"></i>
+      </div>
+      <h4 class="text-lg font-semibold mb-2">Camping</h4>
+      <p class="text-gray-600">Profitez d’un séjour en pleine nature avec tout le confort nécessaire.</p>
+    </div>
+
+    <!-- Excursion / Visite guidée -->
+    <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300 cursor-pointer">
+      <div class="text-primary text-3xl mb-4">
+        <i class="fas fa-map-marked-alt"></i>
+      </div>
+      <h4 class="text-lg font-semibold mb-2">Excursion / Visite guidée</h4>
+      <p class="text-gray-600">Découvrez les sites incontournables avec nos guides expérimentés.</p>
+    </div>
+
+    <!-- Hébergement / Hôtel -->
+    <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300 cursor-pointer">
+      <div class="text-primary text-3xl mb-4">
+        <i class="fas fa-hotel"></i>
+      </div>
+      <h4 class="text-lg font-semibold mb-2">Hébergement / Hôtel</h4>
+      <p class="text-gray-600">Séjournez dans des hôtels et lodges sélectionnés pour votre confort et sécurité.</p>
+    </div>
+
+  </div>
+</div>
+
+
+  <!-- Section Location de voiture -->
+<section id="location-voiture" class="py-16 bg-gray-100">
+  <div class="container mx-auto px-4">
+    <h2 class="text-2xl font-medium mb-8 text-center">Location de voiture</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+      <!-- Voiture économique -->
+      <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300 cursor-pointer">
+        <div class="text-primary text-3xl mb-4">
+          <i class="fas fa-car-side"></i>
+        </div>
+        <h4 class="text-lg font-semibold mb-2">Voiture économique</h4>
+        <p class="text-gray-600">Idéal pour vos trajets urbains et courts déplacements à moindre coût.</p>
+      </div>
+
+      <!-- SUV / 4x4 -->
+      <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300 cursor-pointer">
+        <div class="text-primary text-3xl mb-4">
+          <i class="fas fa-truck-pickup"></i>
+        </div>
+        <h4 class="text-lg font-semibold mb-2">SUV / 4x4</h4>
+        <p class="text-gray-600">Pour les trajets en famille ou en groupe avec plus de confort et d’espace.</p>
+      </div>
+
+      <!-- Berline de luxe -->
+      <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300 cursor-pointer">
+        <div class="text-primary text-3xl mb-4">
+          <i class="fas fa-car"></i>
+        </div>
+        <h4 class="text-lg font-semibold mb-2">Berline de luxe</h4>
+        <p class="text-gray-600">Pour vos occasions spéciales ou vos déplacements professionnels avec style.</p>
+      </div>
+
+      <!-- Mini-van / Familiale -->
+      <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300 cursor-pointer">
+        <div class="text-primary text-3xl mb-4">
+          <i class="fas fa-shuttle-van"></i>
+        </div>
+        <h4 class="text-lg font-semibold mb-2">Mini-van / Familiale</h4>
+        <p class="text-gray-600">Idéal pour les voyages en groupe ou en famille, tout le confort assuré.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- À Propos Section --> 
+ <section id="apropos" class="py-16 bg-light">
+     <div class="container mx-auto px-4"> 
+        <div class="flex flex-col lg:flex-row items-center">
+             <div class="lg:w-1/2 mb-8 lg:mb-0 lg:pr-8 animate-slide-left"> 
+                <img src="https://picsum.photos/600/400?random=2" alt="Agence Iriaess SARL" class="w-full rounded-lg shadow-md"> 
+            </div>
+             <div class="lg:w-1/2 lg:pl-8 animate-slide-right"> 
+                <h2 class="text-3xl font-bold mb-6">À propos de nous</h2>
+                 <p class="text-gray-700 mb-4"> Fondée en 2025, Niriakees.SARL est une agence immobilière de référence à Yaou, spécialisée dans l'achat, la vente et la location de biens immobiliers. </p>
+                  <p class="text-gray-700 mb-4"> Notre équipe de professionnels expérimentés vous accompagne dans tous vos projets immobiliers avec expertise et transparence. </p> 
+                  <p class="text-gray-700"> Nous nous engageons à vous offrir un service personnalisé et de qualité, en mettant à votre disposition notre parfaite connaissance du marché local. </p>
+                 </div>
+               </div>
+           </section>
+
+   
+  <!-- Galerie Section -->
+<section id="galerie" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">Galerie</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <!-- Image 1 -->
+            <div class="gallery-item overflow-hidden rounded-lg shadow-sm hover:shadow-md transition duration-300 cursor-pointer" onclick="openModal('Image/villa.jpg')">
+                <img src="Image/villa moderne .jpg" alt="villa moderne" class="w-full h-64 object-cover" loading="lazy">
+                <div class="p-4">
+                    <h3 class="font-semibold">villa moderne </h3>
+                    <p class="text-sm text-gray-600">Bonoua Centre</p>
+                </div>
+            </div>
+
+            <!-- Image 2 -->
+            <div class="gallery-item overflow-hidden rounded-lg shadow-sm hover:shadow-md transition duration-300 cursor-pointer" onclick="openModal('Image/appartement.jpg')">
+                <img src="Image/appartement 2.jpg" alt="appartement 2" class="w-full h-64 object-cover" loading="lazy">
+                <div class="p-4">
+                    <h3 class="font-semibold">appartement 2</h3>
+                    <p class="text-sm text-gray-600">Résidence Les Palmiers</p>
+                </div>
+            </div>
+
+            <!-- Image 3 -->
+            <div class="gallery-item overflow-hidden rounded-lg shadow-sm hover:shadow-md transition duration-300 cursor-pointer" onclick="openModal('Image/terrain.jpg')">
+                <img src="Image/Ap.jpg" alt="Ap.png" class="w-full h-64 object-cover" loading="lazy">
+                <div class="p-4">
+                    <h3 class="font-semibold">Ap</h3>
+                    <p class="text-sm text-gray-600">Zone résidentielle</p>
+                </div>
+            </div>
+
+            <!-- Ajoute d’autres images ici -->
+        </div>
+    </div>
+</section>
+
+<!-- Modal pour agrandir les images -->
+<div id="galleryModal" class="fixed inset-0 bg-black bg-opacity-50 hidden justify-center items-center z-50">
+    <div class="bg-white rounded-lg w-11/12 md:w-2/3 lg:w-1/2 p-4 relative">
+        <button class="absolute top-2 right-2 text-gray-600 hover:text-gray-900 text-2xl font-bold" onclick="closeModal()">&times;</button>
+        <img id="modalImage" src="" alt="Image agrandie" class="w-full h-auto rounded">
+    </div>
+</div>
+
+<script>
+function openModal(src) {
+    document.getElementById('modalImage').src = src;
+    document.getElementById('galleryModal').classList.remove('hidden');
+    document.getElementById('galleryModal').classList.add('flex');
+}
+
+function closeModal() {
+    document.getElementById('galleryModal').classList.add('hidden');
+    document.getElementById('galleryModal').classList.remove('flex');
+}
+</script>
+
+
+    <section id="cta" class="bg-primary text-white py-16">
+  <div class="container mx-auto px-4 text-center">
+    <h2 class="text-4xl font-bold mb-4">Vous avez un bien à vendre ou à louer ?</h2>
+    <p class="mb-8 text-lg max-w-xl mx-auto">Confiez votre projet à nos experts immobiliers pour une estimation gratuite et un accompagnement personnalisé.</p>
+    <a href="#contact" class="inline-block bg-white text-primary font-semibold py-3 px-8 rounded-full shadow hover:bg-gray-100 transition duration-300">
+      Contactez-nous dès maintenant
+    </a>
+  </div>
+</section>
+
+
+        <!-- Témoignages Section -->
+    <section id="temoignages" class="py-16 bg-light">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Témoignages de nos clients</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <p class="text-gray-700 mb-4">"Service impeccable ! J'ai trouvé la maison parfaite grâce à leur accompagnement. Merci Niriakees.SARL."</p>
+                    <h4 class="font-semibold text-primary">— Aïcha K.</h4>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <p class="text-gray-700 mb-4">"Professionnels, rapides et efficaces. Je recommande fortement cette agence pour toute vente ou location."</p>
+                    <h4 class="font-semibold text-primary">— Jean M.</h4>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <p class="text-gray-700 mb-4">"Une équipe à l’écoute, des conseils judicieux, et un excellent suivi. Je suis très satisfait."</p>
+                    <h4 class="font-semibold text-primary">— Fatou B.</h4>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+      <!-- Actualités & Nouvelles-->
+    <section id="actualites" class="py-16 bg-light">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-12">Actualités</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+      <!-- Article 1 -->
+      <article class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold mb-2">Lancement d'un nouveau projet</h3>
+        <p class="text-gray-600 mb-4">Découvrez notre dernier projet immobilier à Yaou.</p>
+        <button onclick="openNewsModal(1)" class="text-primary hover:text-secondary font-semibold underline">Lire la suite →</button>
+      </article>
+
+      <!-- Article 2 -->
+      <article class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold mb-2">Conseils pour vendre votre bien</h3>
+        <p class="text-gray-600 mb-4">Nos experts vous donnent les meilleures astuces pour réussir votre vente.</p>
+        <button onclick="openNewsModal(2)" class="text-primary hover:text-secondary font-semibold underline">Lire la suite →</button>
+      </article>
+
+      <!-- Article 3 -->
+      <article class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold mb-2">Nouvelles réglementations immobilières</h3>
+        <p class="text-gray-600 mb-4">Restez informé des dernières lois qui impactent le marché immobilier local.</p>
+        <button onclick="openNewsModal(3)" class="text-primary hover:text-secondary font-semibold underline">Lire la suite →</button>
+      </article>
+
+    </div>
+</section>
+
+</section>
+
+
+
+    <!-- Contact Section  -->
+    <section id="contact" class="py-16 bg-light">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Contactez-nous</h2>
+            <div class="flex flex-col lg:flex-row gap-8">
+                <div class="lg:w-1/2">
+                    <form id="contactForm" class="bg-white p-6 rounded-lg shadow-md">
+    <div class="mb-4">
+        <label for="name" class="block text-gray-700 mb-2">Nom complet</label>
+        <input type="text" id="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+    </div>
+    <div class="mb-4">
+        <label for="email" class="block text-gray-700 mb-2">Email</label>
+        <input type="email" id="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+    </div>
+    <div class="mb-4">
+        <label for="message" class="block text-gray-700 mb-2">Message</label>
+        <textarea id="message" rows="4" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+    </div>
+    <button type="submit" class="bg-primary hover:bg-secondary text-white font-medium py-2 px-6 rounded-lg transition duration-300 w-full">
+        Envoyer
+    </button>
+    <p id="responseMessage" class="mt-4 text-center"></p>
+</form>
+
+</div>
+  <div class="lg:w-1/2">
+                    <div class="bg-white p-6 rounded-lg shadow-md h-full">
+                        <h3 class="text-xl font-semibold mb-4">Nos coordonnées</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <i class="fas fa-map-marker-alt text-primary mt-1 mr-3"></i>
+                                <p>123 Avenue de l'Indépendance, Yaou, Côte d'Ivoire</p>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-phone-alt text-primary mr-3"></i>
+                                <p>+225 01 02 53 53 14</p>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-envelope text-primary mr-3"></i>
+                                <p>contact@Niriakees.SARL.com</p>
+                            </div>
+                        </div>
+                        <div class="mt-8">
+                            <h4 class="font-medium mb-3">Suivez-nous</h4>
+                            <div class="flex space-x-4">
+                                <a href="https://www.facebook.com/yann.cedric.anoh" target="_blank" class="text-primary hover:text-secondary text-xl">
+                                  <i class="fab fa-facebook-f"></i>
+                                </a>
+                                  <!-- Instagram -->
+    <a href="https://www.instagram.com/ton_compte_instagram" target="_blank" class="text-primary hover:text-secondary text-xl">
+        <i class="fab fa-instagram"></i>
+    </a>
+
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/in/ton_compte_linkedin" target="_blank" class="text-primary hover:text-secondary text-xl">
+        <i class="fab fa-linkedin-in"></i>
+    </a>
+
+    <!-- WhatsApp -->
+    <a href="https://wa.me/2250102535314" target="_blank" class="text-primary hover:text-secondary text-xl">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+<!-- Footer -->
+<footer class="bg-light py-15 mt-auto">
+  <!-- Section localisation -->
+  <div class="container mx-auto px-4 mb-8">
+    <h3 class="text-xl font-semibold text-center mb-2">Notre localisation</h3>
+    <p class="text-center mb-4">Venez nous rendre visite !</p>
+    <div class="max-w-full overflow-hidden mx-auto rounded-lg shadow-md">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d973.104540499064!2d-3.6516313930688735!3d5.228209428721835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfc21b2cbdea6beb%3A0xfc6428efeab10db5!2sNiriakees.SARL!5e0!3m2!1sfr!2sci!4v1754910577343!5m2!1sfr!2sci" 
+        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+
+  <!-- Section copyright et liens -->
+  <div class="bg-dark text-white py-6">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+      <div class="mb-4 md:mb-0">
+        <p>© 2025 Niriakees.SARL. Tous droits réservés.</p>
+      </div>
+      <div class="flex space-x-4">
+        <a href="#" class="hover:text-primary transition">Mentions légales</a>
+        <a href="#" class="hover:text-primary transition">Politique de confidentialité</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Image Modal -->
+<div id="imageModal" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 hidden modal">
+  <div class="relative max-w-4xl w-full p-4">
+    <button onclick="closeModal()" class="absolute -top-12 right-0 text-white text-3xl hover:text-primary transition">
+      <i class="fas fa-times"></i>
+    </button>
+    <img id="modalImage" src="" alt="" class="w-full max-h-screen object-contain">
+  </div>
+</div>
+
+<!-- Modale Actualités -->
+<div id="newsModal" class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 hidden">
+  <div class="bg-white rounded-lg max-w-3xl w-full p-6 relative">
+    <button onclick="closeNewsModal()" class="absolute top-4 right-4 text-gray-700 hover:text-primary text-3xl font-bold">&times;</button>
+    <h3 id="newsModalTitle" class="text-2xl font-bold mb-4"></h3>
+    <img id="newsModalImage" src="" alt="Image actualité" class="w-full rounded mb-4 max-h-80 object-cover">
+    <p id="newsModalContent" class="text-gray-700"></p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

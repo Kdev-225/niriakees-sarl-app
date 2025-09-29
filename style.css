@@ -1,0 +1,27 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Global Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Hero Section */
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://picsum.photos/1920/1080?random=1');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Galerie Hover */
+.gallery-item:hover img {
+    transform: scale(1.03);
+    transition: transform 0.3s ease;
+}
+
+/* Modals */
+.modal {
+    transition: opacity 0.3s ease;
+}
